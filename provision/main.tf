@@ -1,12 +1,12 @@
 # updated to support TF 0.12
 # backward support for TF 0.11
-variable "name" {
-}
+variable "name" {}
 
 resource "random_id" "random" {
   keepers = {
     uuid = "${uuid()}"
   }
+
   byte_length = 32
 }
 
